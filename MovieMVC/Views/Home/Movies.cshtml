@@ -1,0 +1,31 @@
+﻿<form asp-controller="Home" asp-action="Result" method="post">
+    <h1 class="display-4">Register Movie:</h1>
+    <br />
+
+    <p>@Html.Raw(TempData["msg"])</p>
+
+    <p>ID:&emsp;<input type="number" name="id" /></p>
+    
+    <p>Title:&emsp;<input type="text" name="title" /></p>
+    
+    <p>Genre:&emsp;
+        <select name="genre">
+            <option value="Drama">Drama</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="Horror">Horror</option>
+            <option value="Documentary">Documentary</option>
+        </select>
+    </p>
+    
+    <p>Year:&emsp;<input type="number" name="year" /></p>
+    
+    <p>Actors:&emsp;<input type="text" name="actors" /></p>
+    
+    <p>Directors:&emsp;<input type="text" name="directors" /></p>
+    
+
+    <br /><br />
+    <input type="submit" />
+</form>
